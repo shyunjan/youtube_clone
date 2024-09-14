@@ -1,5 +1,5 @@
 <article
-	class="prose h-screen max-w-full prose-h1:text-orange-300 prose-p:text-stone-300 prose-a:text-emerald-300 dark:bg-neutral-900"
+	class="prose h-screen max-w-full dark:bg-neutral-900 prose-h1:dark:text-orange-300 prose-p:dark:text-stone-300 prose-a:dark:text-emerald-300"
 >
 	<h1>Welcome to SvelteKit</h1>
 	<p>
