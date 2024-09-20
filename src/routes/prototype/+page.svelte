@@ -13,23 +13,25 @@
 />
 
 <header
-  class="flex h-14 max-w-full flex-wrap items-start justify-between bg-indigo-400 transition-height duration-500 ease-in-out lg:items-center dark:bg-neutral-900"
+  class="flex h-14 flex-col justify-between transition-height duration-500 ease-in-out lg:flex-row lg:items-center dark:bg-neutral-900"
   class:h-64={visibleMenu}
 >
   <!-- display:none 대신에 visibility:hidden을 사용하고 height에 특정한 숫자가 지정되지 않으면 transition-height가 작동하지 않는다 -->
-  <img src="/Youtube-logo-with-flat-design-edited.png" alt="logo" class="mx-3 my-2 h-10 w-32" />
-  <section
-    role="button"
-    tabindex="0"
-    class="mx-2 my-1 flex h-12 flex-col items-end justify-evenly py-1 lg:hidden"
-    on:click={toggleMenu}
-    on:keypress={toggleMenu}
-  >
-    <span class="h-1 w-8 rounded dark:bg-white" />
-    <span class="h-1 w-8 rounded dark:bg-white" />
-    <span class="h-1 w-8 rounded dark:bg-white" />
+  <section class="flex justify-between">
+    <img src="/Youtube-logo-with-flat-design-edited.png" alt="logo" class="mx-3 my-2 h-10 w-32" />
+    <section
+      role="button"
+      tabindex="0"
+      class="mx-2 my-1 flex h-12 flex-col justify-evenly py-1 lg:hidden"
+      on:click={toggleMenu}
+      on:keypress={toggleMenu}
+    >
+      <span class="h-1 w-8 rounded dark:bg-white" />
+      <span class="h-1 w-8 rounded dark:bg-white" />
+      <span class="h-1 w-8 rounded dark:bg-white" />
+    </section>
   </section>
-  <section class="w-full lg:w-auto">
+  <section>
     <article
       class="prose flex max-w-full flex-col justify-end text-white lg:flex lg:flex-row lg:items-center lg:justify-center"
       class:hidden={!visibleMenu}
@@ -41,10 +43,7 @@
       <div class="main-menu">Bookings</div>
     </article>
   </section>
-  <section
-    class="mx-2 my-1 w-full pb-2 text-center lg:inline lg:w-auto lg:pb-1"
-    class:hidden={!visibleMenu}
-  >
+  <section class="mx-2 my-1 pb-2 text-center lg:inline lg:pb-1" class:hidden={!visibleMenu}>
     <img
       src="twitter-logo.png"
       alt="twitter_logo"
