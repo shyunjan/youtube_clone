@@ -4,6 +4,6 @@
 
 @layer components {
   .main-menu {
-    @apply mx-1 px-3 text-center hover:bg-orange-400;
+    @apply mx-1 cursor-pointer px-3 text-center hover:bg-orange-400;
   }
 }
