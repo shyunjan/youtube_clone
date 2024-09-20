@@ -12,7 +12,11 @@
   }}
 />
 
-<header class="flex h-auto max-w-full flex-wrap dark:bg-neutral-900" class:h-64={visibleMenu}>
+<header
+  class="flex h-14 max-w-full flex-wrap items-start justify-between bg-indigo-400 transition-height duration-500 ease-in-out lg:items-center dark:bg-neutral-900"
+  class:h-64={visibleMenu}
+>
+  <!-- display:none 대신에 visibility:hidden을 사용하고 height에 특정한 숫자가 지정되지 않으면 transition-height가 작동하지 않는다 -->
   <img src="/Youtube-logo-with-flat-design-edited.png" alt="logo" class="mx-3 my-2 h-10 w-32" />
   <section
     role="button"
@@ -25,13 +29,10 @@
     <span class="h-1 w-8 rounded dark:bg-white" />
     <span class="h-1 w-8 rounded dark:bg-white" />
   </section>
-  <section
-    class="flex flex-col transition-height duration-500 ease-in-out lg:flex-row lg:items-center"
-    class:hidden={!visibleMenu}
-  >
-    <!-- display:none 대신에 visibility:hidden을 사용하고 height에 특정한 숫자가 지정되지 않으면 transition-height가 작동하지 않는다 -->
+  <section class="w-full lg:w-auto">
     <article
-      class="prose flex max-w-full flex-grow flex-col justify-end text-white lg:flex lg:flex-row lg:items-center lg:justify-center"
+      class="prose flex max-w-full flex-col justify-end text-white lg:flex lg:flex-row lg:items-center lg:justify-center"
+      class:hidden={!visibleMenu}
     >
       <div class="main-menu">Home</div>
       <div class="main-menu">Gallery</div>
@@ -40,7 +41,10 @@
       <div class="main-menu">Bookings</div>
     </article>
   </section>
-  <section class="m-4 text-center lg:inline" class:hidden={!visibleMenu}>
+  <section
+    class="mx-2 my-1 w-full pb-2 text-center lg:inline lg:w-auto lg:pb-1"
+    class:hidden={!visibleMenu}
+  >
     <img
       src="twitter-logo.png"
       alt="twitter_logo"
