@@ -1,11 +1,20 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}'],
 
-	theme: {
-		extend: {}
-	},
+  darkMode: 'selector',
 
-	plugins: [require('@tailwindcss/typography')]
+  theme: {
+    extend: {
+      height: {
+        68: '17rem'
+      },
+      transitionProperty: {
+        height: 'height'
+      }
+    }
+  },
+
+  plugins: [require('@tailwindcss/typography')]
 } as Config;
