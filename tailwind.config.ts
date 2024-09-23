@@ -7,6 +7,9 @@ export default {
 
   theme: {
     extend: {
+      height: {
+        68: '17rem'
+      },
       transitionProperty: {
         height: 'height'
       }
