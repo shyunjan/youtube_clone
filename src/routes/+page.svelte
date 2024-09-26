@@ -1,3 +1,7 @@
+<script>
+  import Browse from './Browse.svelte';
+</script>
+
 <header class="flex h-14 items-center justify-between px-3 py-1 dark:bg-stone-900">
   <button class="w-16">
     <i class="fa-solid fa-bars text-3xl dark:text-slate-100 dark:hover:text-orange-400"></i>
@@ -35,5 +39,7 @@
   </div>
 </header>
 <aside></aside>
+
+<Browse />
 
 <footer></footer>
