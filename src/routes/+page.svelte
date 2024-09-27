@@ -38,7 +38,9 @@
     </button>
   </div>
 </header>
-<aside></aside>
+<aside>
+  <!-- 좌측 메뉴  -->
+</aside>
 
 <Browse />
 
