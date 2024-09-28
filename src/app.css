@@ -16,4 +16,8 @@
   .main-menu {
     @apply mx-1 block cursor-pointer rounded-md px-3 py-1 text-center hover:bg-orange-400;
   }
+
+  .tag {
+    @apply dark:text-dark-main-text bg-tag-bg mx-0.35 whitespace-nowrap rounded-md border-solid px-3 py-1 text-sm font-thin;
+  }
 }

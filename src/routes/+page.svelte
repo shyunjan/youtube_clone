@@ -2,9 +2,9 @@
   import Browse from './Browse.svelte';
 </script>
 
-<header class="flex h-14 items-center justify-between px-3 py-1 dark:bg-stone-900">
+<header class="dark:bg-dark-main-bg flex h-14 items-center justify-between px-3 py-1">
   <button class="w-16">
-    <i class="fa-solid fa-bars text-3xl dark:text-slate-100 dark:hover:text-orange-400"></i>
+    <i class="fa-solid fa-bars dark:text-dark-main-text text-3xl dark:hover:text-orange-400"></i>
   </button>
   <img src="/Youtube-logo-with-flat-design-edited.png" alt="logo" class="w-30 mx-2 h-8" />
   <div id="header_buttons" class="flex items-center">
@@ -34,7 +34,7 @@
       ></path></svg
     >
     <button>
-      <div class="h-8 w-8 rounded-full bg-slate-700" />
+      <div class="dark:bg-dark-main-bg h-8 w-8 rounded-full" />
     </button>
   </div>
 </header>
