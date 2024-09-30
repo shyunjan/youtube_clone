@@ -1,5 +1,15 @@
 import type { Config } from 'tailwindcss';
 import colors from 'tailwindcss/colors';
+import { createRequire } from 'node:module';
+const _require = createRequire(import.meta.url);
+const defaultColors = _require('tailwindcss/colors.js');
+
+// 아래는 TailwindCSS version upgrade로 인한 warning message를 제거하기 위한 코드
+delete defaultColors.lightBlue;
+delete defaultColors.warmGray;
+delete defaultColors.trueGray;
+delete defaultColors.coolGray;
+delete defaultColors.blueGray;
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
