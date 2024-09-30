@@ -20,11 +20,7 @@
     <!-- display:none 대신에 visibility:hidden을 사용하고 height에 특정한 숫자가 지정되지 않으면 transition-height가 작동하지 않는다 -->
     <section class="flex items-center justify-between">
       <img src="/Youtube-logo-with-flat-design-edited.png" alt="logo" class="h-10 w-32 py-1" />
-      <button
-        class="flex h-12 flex-col justify-evenly py-1 lg:hidden"
-        on:click={toggleMenu}
-        on:keypress={toggleMenu}
-      >
+      <button class="lg:hidden" on:click={toggleMenu} on:keypress={toggleMenu}>
         <i class="fa-solid fa-bars text-3xl dark:text-white dark:hover:text-orange-400"></i>
       </button>
     </section>
@@ -51,3 +47,13 @@
     </ul>
   </nav>
 </header>
+<section>
+  <article
+    class="prose h-screen max-w-full bg-slate-50 prose-h1:text-rose-700 prose-p:text-stone-800 prose-a:text-sky-600 dark:bg-neutral-900 prose-h1:dark:text-orange-300 prose-p:dark:text-stone-300 prose-a:dark:text-emerald-300"
+  >
+    <h1>Welcome to SvelteKit</h1>
+    <p>
+      Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
+    </p>
+  </article>
+</section>
