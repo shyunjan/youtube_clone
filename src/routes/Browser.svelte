@@ -37,8 +37,8 @@
   });
 </script>
 
-<section class="dark:bg-dark-main-bg h-full w-full py-4">
-  <!-- 카테고리 리스트 박스 -->
+<section id="browser" class="h-full w-full overflow-x-hidden py-4 dark:bg-dark-main-bg">
+  <!-- Category list box -->
   <div class="relative mx-2 flex">
     <div
       class="absolute left-0 top-0 z-[2020] flex h-full w-24"
@@ -64,7 +64,7 @@
           /></svg
         ></button
       ><span
-        class="from-cod-gray-950 to-cod-gray-200/0 flex-grow bg-gradient-to-r from-20% to-80%"
+        class="flex-grow bg-gradient-to-r from-cod-gray-950 from-20% to-cod-gray-200/0 to-80%"
         aria-label="hidden"
       />
     </div>
@@ -96,7 +96,7 @@
       class:hidden={!category.rightButton}
     >
       <span
-        class="from-cod-gray-950 to-cod-gray-200/0 flex-grow bg-gradient-to-l from-20% to-80%"
+        class="flex-grow bg-gradient-to-l from-cod-gray-950 from-20% to-cod-gray-200/0 to-80%"
         aria-label="hidden"
       />
       <button on:click={categoryScrollRight} class="dark:bg-dark-main-bg"
