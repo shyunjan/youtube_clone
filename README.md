@@ -1,6 +1,6 @@
-<div style="display:flex; max-width:100%; justify-content:center;">
+<p align="center">
   <a href="https://svelte.dev/" target="blank"><img src="https://svelte.dev/favicon.png" alt="Svelte Logo"/></a>
-</div>
+</p>
 
 # Description
 
