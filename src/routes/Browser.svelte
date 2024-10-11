@@ -42,8 +42,7 @@
   <div class="relative mx-2 flex">
     <div
       class="absolute left-0 top-0 z-[2020] flex h-full w-24"
-      class:hidden={!category.leftButton}
-    >
+      class:hidden={!category.leftButton}>
       <button on:click={categoryScrollLeft} class="dark:bg-dark-main-bg"
         ><svg
           height="24px"
@@ -60,13 +59,11 @@
             id="_x3C_Transparent_Rectangle_x3E_"
             class="fill-none"
             height="24"
-            width="24"
-          /></svg
+            width="24" /></svg
         ></button
       ><span
         class="flex-grow bg-gradient-to-r from-cod-gray-950 from-20% to-cod-gray-200/0 to-80%"
-        aria-label="hidden"
-      />
+        aria-label="hidden" />
     </div>
     <div
       class="flex h-full flex-grow overflow-x-hidden"
@@ -74,8 +71,7 @@
       bind:clientWidth={category.clientWidth}
       on:scrollend={(event) => {
         setCategoryScrollButtonDisplay(event.currentTarget, event.currentTarget.clientWidth);
-      }}
-    >
+      }}>
       <!-- 이 scroll box의 width가 변경되면 위의 bind:clientWidth를 통해서 afterUpdate()가 trigger된다 -->
       <span class="tag">전체</span>
       <span class="tag">뉴스</span>
@@ -93,12 +89,10 @@
     </div>
     <div
       class="absolute right-0 top-0 z-[2020] flex h-full w-24 justify-end"
-      class:hidden={!category.rightButton}
-    >
+      class:hidden={!category.rightButton}>
       <span
         class="flex-grow bg-gradient-to-l from-cod-gray-950 from-20% to-cod-gray-200/0 to-80%"
-        aria-label="hidden"
-      />
+        aria-label="hidden" />
       <button on:click={categoryScrollRight} class="dark:bg-dark-main-bg"
         ><svg
           height="24px"
@@ -115,10 +109,8 @@
             id="_x3C_Transparent_Rectangle_x3E_"
             height="24"
             width="24"
-            class="fill-none"
-          /></svg
-        ></button
-      >
+            class="fill-none" /></svg
+        ></button>
     </div>
   </div>
 </section>

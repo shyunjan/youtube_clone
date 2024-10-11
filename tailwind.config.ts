@@ -21,17 +21,24 @@ export default {
       ...colors,
       'dark-main-bg': '#0f0f0f',
       'dark-main-text': '#f1f1f1',
-      'tag-bg': '#272727'
+      'tag-bg': '#272727',
     },
     extend: {
-      fontSize: {
-        xxs: ['0.62rem', '1rem']
-      },
       height: {
-        68: '17rem'
+        68: '17rem',
+      },
+      width: {
+        18: '4.5rem',
+      },
+
+      borderWidth: {
+        1: '1px',
+      },
+      fontSize: {
+        xxs: ['0.62rem', '1rem'],
       },
       transitionProperty: {
-        height: 'height'
+        height: 'height',
       },
       colors: {
         'cod-gray': {
@@ -45,7 +52,7 @@ export default {
           700: '#4f4f4f',
           800: '#454545',
           900: '#3d3d3d',
-          950: '#0f0f0f'
+          950: '#0f0f0f',
         },
         'seashell': {
           50: '#f8f8f8',
@@ -58,7 +65,7 @@ export default {
           700: '#525252',
           800: '#464646',
           900: '#3d3d3d',
-          950: '#292929'
+          950: '#292929',
         },
         'shark': {
           50: '#f6f6f6',
@@ -71,16 +78,16 @@ export default {
           700: '#4f4f4f',
           800: '#454545',
           900: '#3d3d3d',
-          950: '#272727'
-        }
+          950: '#272727',
+        },
       },
       margin: {
         0.3: '0.3rem',
         0.35: '0.35rem',
-        0.4: '0.4rem'
-      }
-    }
+        0.4: '0.4rem',
+      },
+    },
   },
 
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [require('@tailwindcss/typography')],
 } as Config;
