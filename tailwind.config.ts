@@ -24,14 +24,18 @@ export default {
       'tag-bg': '#272727',
     },
     extend: {
+      height: {
+        68: '17rem',
+      },
+      width: {
+        18: '4.5rem',
+      },
+
       borderWidth: {
         1: '1px',
       },
       fontSize: {
         xxs: ['0.62rem', '1rem'],
-      },
-      height: {
-        68: '17rem',
       },
       transitionProperty: {
         height: 'height',

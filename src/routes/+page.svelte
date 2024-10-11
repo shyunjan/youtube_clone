@@ -1,11 +1,21 @@
 <script>
+  import MyPageSvg from '$lib/icons/My-page-svg.svelte';
+  import HomeSvg from '$lib/icons/Home-svg.svelte';
+  import ShortsSvg from '$lib/icons/Shorts-svg.svelte';
+  import SubscriptionSvg from '$lib/icons/Subscription-svg.svelte';
+  import WatchRecordSvg from '$lib/icons/Watch-record-svg.svelte';
+  import MyChannelSvg from '$lib/icons/My-channel-svg.svelte';
+  import PlayListSvg from '$lib/icons/Play-list-svg.svelte';
+  import MyVideosSvg from '$lib/icons/My-videos-svg.svelte';
+  import PlayLateListSvg from '$lib/icons/Play-late-list-svg.svelte';
+  import FavouriteSvg from '$lib/icons/Favourite-svg.svelte';
   import Browser from './Browser.svelte';
 </script>
 
 <!-- Main Layout -->
 <div id="main" class="relative flex h-full w-full flex-wrap">
   <!-- 상단 Header 영역 -->
-  <header class="flex h-14 w-full items-center justify-between px-3 py-1 dark:bg-dark-main-bg">
+  <header class="flex h-14 w-full items-center justify-between px-3 dark:bg-dark-main-bg">
     <button class="w-16">
       <i class="fa-solid fa-bars text-3xl dark:text-dark-main-text dark:hover:text-orange-400"></i>
     </button>
@@ -47,76 +57,28 @@
     <!-- xl이하 screen을 위한 좌측 App drawer 및 mini-guide -->
     <aside id="app_drawer" class="relative flex w-60 shrink-0 dark:bg-slate-300">
       <!-- Mini-guide -->
-      <nav id="mini-guide" class="flex w-16 flex-col items-center pt-4 dark:bg-dark-main-bg">
-        <a href={null} class="my-4 flex flex-col items-center">
+      <nav id="mini-guide" class="w-18 flex flex-col items-center px-1 pt-1 dark:bg-dark-main-bg">
+        <a href={null} class="my-[15px] flex flex-col items-center">
           <div class="mb-1 h-6 w-6 text-center">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              class="pointer-events-none h-full w-full"
-              xmlns="http://www.w3.org/2000/svg"
-              enable-background="new 0 0 24 24"
-              focusable="false"
-              aria-hidden="true"
-              ><g
-                ><path
-                  d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"
-                  class="dark:fill-dark-main-text"></path>
-              </g></svg>
+            <HomeSvg pathClass="dark:fill-dark-main-text" />
           </div>
           <span class="text-xxs dark:text-dark-main-text">홈</span>
         </a>
-        <a href={null} class="my-4 flex flex-col items-center">
+        <a href={null} class="my-[15px] flex flex-col items-center">
           <div class="mb-1 h-6 w-6 text-center">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              class="pointer-events-none h-full w-full"
-              xmlns="http://www.w3.org/2000/svg"
-              focusable="false"
-              aria-hidden="true"
-              ><path
-                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
-                class="dark:fill-dark-main-text"></path
-              ></svg>
+            <ShortsSvg pathClass="dark:fill-dark-main-text" />
           </div>
           <span class="text-xxs dark:text-dark-main-text">Shorts</span>
         </a>
-        <a href={null} class="my-4 flex flex-col items-center">
+        <a href={null} class="my-[15px] flex flex-col items-center">
           <div class="mb-1 h-6 w-6 text-center">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              class="pointer-events-none h-full w-full"
-              xmlns="http://www.w3.org/2000/svg"
-              focusable="false"
-              enable-background="new 0 0 24 24"
-              aria-hidden="true"
-              ><path
-                d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
-                class="dark:fill-dark-main-text"></path
-              ></svg>
+            <SubscriptionSvg pathClass="dark:fill-dark-main-text" />
           </div>
           <span class="text-xxs dark:text-dark-main-text">구독</span>
         </a>
-        <a href={null} class="my-4 flex flex-col items-center">
+        <a href={null} class="my-[15px] flex flex-col items-center">
           <div class="mb-1 h-6 w-6 text-center">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              class="pointer-events-none h-full w-full"
-              xmlns="http://www.w3.org/2000/svg"
-              enable-background="new 0 0 24 24"
-              focusable="false"
-              aria-hidden="true"
-              ><path
-                d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"
-                class="dark:fill-dark-main-text"></path
-              ></svg>
+            <MyPageSvg pathClass="dark:fill-dark-main-text" />
           </div>
           <span class="text-xxs dark:text-dark-main-text">내 페이지</span>
         </a>
@@ -127,63 +89,27 @@
         <div id="main_menu" class="pb-3">
           <a href={null} class="flex items-center px-4 py-2">
             <div class="mr-6 text-center">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                class="pointer-events-none h-full w-full"
-                xmlns="http://www.w3.org/2000/svg"
-                enable-background="new 0 0 24 24"
-                focusable="false"
-                aria-hidden="true"
-                ><g
-                  ><path
-                    d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"
-                    class="dark:fill-dark-main-text"></path>
-                </g></svg>
+              <HomeSvg pathClass="dark:fill-dark-main-text" />
             </div>
             <span class="text-sm dark:text-dark-main-text">홈</span>
           </a>
           <a href={null} class="flex items-center px-4 py-2">
             <div class="mr-6 text-center">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                class="pointer-events-none h-full w-full"
-                xmlns="http://www.w3.org/2000/svg"
-                focusable="false"
-                aria-hidden="true"
-                ><path
-                  d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
-                  class="dark:fill-dark-main-text"></path
-                ></svg>
+              <ShortsSvg pathClass="dark:fill-dark-main-text" />
             </div>
             <span class="text-sm dark:text-dark-main-text">Shorts</span>
           </a>
           <a href={null} class="flex items-center px-4 py-2">
             <div class="mr-6 text-center">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                class="pointer-events-none h-full w-full"
-                xmlns="http://www.w3.org/2000/svg"
-                focusable="false"
-                enable-background="new 0 0 24 24"
-                aria-hidden="true"
-                ><path
-                  d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
-                  class="dark:fill-dark-main-text"></path
-                ></svg>
+              <SubscriptionSvg pathClass="dark:fill-dark-main-text" />
             </div>
             <span class="text-sm dark:text-dark-main-text">구독</span>
           </a>
         </div>
         <!-- My page menu -->
         <div id="my_page_menu" class="border-t-1 py-3 dark:border-dark-main-text/20">
-          <a href={null} class="flex items-center px-4 py-2"
-            ><span class="mr-2 text-base dark:text-dark-main-text">내 페이지</span>
+          <a href={null} class="flex items-center px-4 py-2">
+            <span class="mr-2 text-base dark:text-dark-main-text">내 페이지</span>
             <div class="inline-block h-4 w-4 text-center">
               <svg
                 height="16"
@@ -199,6 +125,49 @@
                 ></svg>
             </div>
           </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <MyChannelSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="text-sm dark:text-dark-main-text">내 채널</span>
+          </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <WatchRecordSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="text-sm dark:text-dark-main-text">시청 기록</span>
+          </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <PlayListSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="text-sm dark:text-dark-main-text">재생목록</span>
+          </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <MyVideosSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="text-sm dark:text-dark-main-text">내 동영상</span>
+          </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <PlayLateListSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="text-sm dark:text-dark-main-text">나중에 볼 동영상</span>
+          </a>
+          <a href={null} class="flex items-center px-4 py-2">
+            <div class="mr-6 text-center">
+              <FavouriteSvg pathClass="dark:fill-dark-main-text" />
+            </div>
+            <span class="truncate text-sm dark:text-dark-main-text"
+              >좋아요 표시한 동영상 동영상 동영상 동영상</span>
+          </a>
+        </div>
+        <!-- Subscription menu -->
+        <div id="my_page_menu" class="border-t-1 py-3 dark:border-dark-main-text/20">
+          <div class="px-4 py-2">
+            <span class="mr-2 text-base dark:text-dark-main-text">구독</span>
+          </div>
         </div>
       </nav>
     </aside>
